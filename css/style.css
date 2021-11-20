@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.header{
+    margin: 0 auto;
+    display: inline-block;
+
+}
+.Mer{
+    background-image: url(../Img/Mer-bg.jpg);
+    color: #fff;
+}
