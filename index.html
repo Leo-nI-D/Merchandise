@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,42 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Merchandise</title>
 </head>
+
 <body>
     <header class="header">
-        <nav>
-            <ul>
-                <li></li>
-                <li><a href="#"><span class="Mer">Mer</span>chandise</a></li>
-                <li><a href="#"><img src="Img/shop.jpg" alt="shop"></a></li>
+        <nav class="nav-menu">
+            <ul class="nav-menu-list">
+                <li class="nav-menu-list-item">
+                    <div id="myLinks">
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    </div>
+
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myLinks");
+                            if (x.style.display === "block") {
+                                x.style.display = "none";
+                            } else {
+                                x.style.display = "block";
+                            }
+                        }
+                    </script>
+                </li>
+             
+                   <span class="burger-menu">
+                        <span class="line-button"></span>
+                        <span class="line-button"></span>
+                        <span class="line-button"></span>
+                   </span>
+              
+                <li class="nav-menu-list-item"><a href="#"><span class="Mer">Mer</span>chandise</a></li>
+                <li class="nav-menu-list-item"><a href="#"><img src="Img/shop.jpg" alt="shop"></a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +59,7 @@
         <section class="main-right-section">
             <img src="Img/Be-king.jpg" alt="Be-king">
             <h3><a href="#">Одежда</a></h3>
-            <p>от 50$</p>            
+            <p>от 50$</p>
             <img src="Img/figures.jpg" alt="Figures">
             <h3><a href="#">Фигургки</a></h3>
             <p>от 25$</p>
@@ -38,5 +68,7 @@
             <p>от 50$</p>
         </section>
     </main>
+
 </body>
+
 </html>
